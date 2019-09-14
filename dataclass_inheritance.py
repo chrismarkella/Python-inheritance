@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-
+from typing import List
 @dataclass
 class Person():
   """docstring for Person"""
@@ -9,4 +9,4 @@ class Person():
 
 @dataclass
 class Student(Person):
-  scores: list
+  scores: List

@@ -1,5 +1,6 @@
-import regular_inheritance   as ri
-import dataclass_inheritance as di
+import regular_inheritance          as ri
+import regular_inheritance_extended as rie
+import dataclass_inheritance        as di
 
 poor_bob      = ri.StudentWithOutStrAndEq('Bob', 'Poor', '12', [10, 9, 9, 8, 10])
 poor_bob_twin = ri.StudentWithOutStrAndEq('Bob', 'Poor', '12', [10, 9, 9, 8, 10])
@@ -13,8 +14,8 @@ print(f'poor_bob is poor_bob_twin: {poor_bob is poor_bob_twin}')
 print(f'After implementing the __str__ and the __eq__ functions.')
 print(f'--------------------------------------------------------')
 
-chris      = ri.Student('Christian', 'Markella', '123', [100, 99, 99, 98, 100])
-chris_twin = ri.Student('Christian', 'Markella', '123', [100, 99, 99, 98, 100])
+chris      = rie.Student('Christian', 'Markella', '123', [100, 99, 99, 98, 100])
+chris_twin = rie.Student('Christian', 'Markella', '123', [100, 99, 99, 98, 100])
 print(f'chris:-->     {chris}')
 print(f'chris_twin--> {chris_twin}')
 print(f'chris == chris_twin: {chris == chris_twin}')
